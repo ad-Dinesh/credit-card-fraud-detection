@@ -7,7 +7,7 @@ from src.prediction import predict_fraud_batch
 # Load Original Dataset
 # --------------------------------------------------
 
-DATA_PATH = "data/creditcard.csv"
+DATA_PATH = "data/raw/creditcard.csv"
 
 df = pd.read_csv(DATA_PATH)
 
