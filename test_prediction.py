@@ -1,10 +1,41 @@
 import pandas as pd
 
-from src.prediction import predict_fraud
+from src.prediction import predict_fraud_batch
 
 
-# Create a sample transaction from the saved test data
-# This section will later be replaced by real user input.
+# --------------------------------------------------
+# Load Original Dataset
+# --------------------------------------------------
 
-print("Prediction pipeline imported successfully.")
-print("Model prediction function is ready.")
+DATA_PATH = "data/creditcard.csv"
+
+df = pd.read_csv(DATA_PATH)
+
+
+# --------------------------------------------------
+# Select Sample Transactions
+# --------------------------------------------------
+
+sample_data = df.head(10)
+
+
+# --------------------------------------------------
+# Run Batch Prediction
+# --------------------------------------------------
+
+results = predict_fraud_batch(
+    sample_data
+)
+
+
+# --------------------------------------------------
+# Display Results
+# --------------------------------------------------
+
+print(results[
+    [
+        "Fraud_Probability",
+        "Prediction",
+        "Decision"
+    ]
+])
