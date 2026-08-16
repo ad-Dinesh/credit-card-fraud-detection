@@ -1,0 +1,7 @@
+{
+    "model_name": "XGBoost",
+    "roc_auc": 0.9747,
+    "pr_auc": 0.8250,
+    "threshold": 0.3767,
+    "version": "1.0.0"
+}
