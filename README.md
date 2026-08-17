@@ -296,35 +296,8 @@ python -m py_compile app.py
 
 ---
 
-## 🚀 Roadmap
 
-- Real-time fraud-scoring API
-- Model and data-drift monitoring
-- Automated retraining pipeline
-- Cost-sensitive learning
-- Probability calibration
-- Docker deployment
-- CI/CD pipeline
-- Cloud deployment
-- Authentication and role-based access
 
----
-
-## 📝 Resume / Interview Notes
-
-**Resume bullet points**
-
-Credit Card Fraud Detection | Python, XGBoost, Scikit-learn, SHAP, Streamlit
-- Built an end-to-end ML pipeline for highly imbalanced credit-card fraud classification — covering EDA, preprocessing, imbalance analysis, model experimentation, evaluation, and deployment.
-- Trained and evaluated an XGBoost classifier achieving **0.9747 ROC-AUC** and **0.8250 PR-AUC**.
-- Optimized the classification threshold to **0.3767** via precision-recall analysis instead of the default 0.50 cutoff.
-- Integrated SHAP for transaction-level explainability and built an interactive Streamlit dashboard for batch prediction, performance evaluation, and business-impact analysis.
-
-**30-second interview pitch**
-
-I built an end-to-end credit card fraud detection system using XGBoost. The core challenge was severe class imbalance — fraud is under 0.2% of transactions — so I optimized for precision, recall, F1, and PR-AUC rather than accuracy. I experimented with SMOTE for resampling and tuned the decision threshold based on the precision-recall curve, landing on 0.3767 instead of the default 0.5. To make the model trustworthy, I added SHAP explainability so every flagged transaction comes with a feature-level explanation, and deployed the whole workflow as an interactive Streamlit app.
-
----
 
 ## 🔐 Data Privacy & Security
 
